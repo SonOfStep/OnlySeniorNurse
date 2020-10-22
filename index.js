@@ -5,7 +5,7 @@
 // @description:ru Взлом перевода на сестринский пост в другое отделении
 // @namespace Да, да я
 // @version 0.2
-// @updateURL    https://raw.githubusercontent.com/SonOfStep/OnlySeniorNurse/master/index.js
+// @updateURL    https://raw.githubusercontent.com/SonOfStep/OnlySeniorNurse/main/index.js
 // @author Omar "SonOfStep" Nurmakhanov
 // @match *://172.30.149.11:8282/OE/appointment/remsandapps*
 // @grant none
