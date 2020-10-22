@@ -4,7 +4,7 @@
 // @description Hacking the transfer to a nursing station in another Department
 // @description:ru Взлом перевода на сестринский пост в другое отделении
 // @namespace Да, да я
-// @version 0.2
+// @version 0.3
 // @updateURL    https://raw.githubusercontent.com/SonOfStep/OnlySeniorNurse/main/index.js
 // @author Omar "SonOfStep" Nurmakhanov
 // @match *://172.30.149.11:8282/OE/appointment/remsandapps*
@@ -24,8 +24,8 @@ $.ajaxSetup({
         $("#add_movem_placeless #placeid_pl option").each( ( item, elem ) => {
           if ( !( 
             ( $(elem).is( '[value="0"]' ) ) || 
-            (  $( elem ).text() === "Место хранения..." ) || 
-          	( $( elem ).text() === 'Каб. ст. медицинской сестры' ) ) ) {
+            (  $( elem ).text() === "Место хранения..." ) ||
+          	( $( elem ).text().trim() === 'Каб. ст. медицинской сестры' ) ) ) {
             $(elem).remove();
           }
         } )
